@@ -16,7 +16,7 @@ import android.view.WindowManager;
 
 import java.util.HashMap;
 
-import static com.sanfrancisco.whatsgame.Constant.threadWork;
+import static com.sanfrancisco.whatsgame.Constant.threadinWork;
 
 public class GameActivity extends Activity {
     static final int START_GAME = 0;//?}?l??????Message?s??
@@ -111,7 +111,7 @@ public class GameActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        threadWork = true;
+        threadinWork = true;
         if (mGLSurfaceView != null) {
 //        	mGLSurfaceView.onResume();
             if (isWin) {
@@ -125,7 +125,7 @@ public class GameActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        threadWork = false;
+        threadinWork = false;
 //        if(mGLSurfaceView!=null)
 //        {
 //        	mGLSurfaceView.onPause();

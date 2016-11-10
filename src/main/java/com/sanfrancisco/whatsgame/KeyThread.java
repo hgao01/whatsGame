@@ -5,7 +5,7 @@ import static com.sanfrancisco.whatsgame.Constant.MAP;
 import static com.sanfrancisco.whatsgame.Constant.MOVE_XZ;
 import static com.sanfrancisco.whatsgame.Constant.OBJECT_COUNT;
 import static com.sanfrancisco.whatsgame.Constant.UNIT_SIZE;
-import static com.sanfrancisco.whatsgame.Constant.threadWork;
+import static com.sanfrancisco.whatsgame.Constant.threadinWork;
 
 //??????????
 public class KeyThread extends Thread {
@@ -17,7 +17,7 @@ public class KeyThread extends Thread {
     }
 
     public void run() {
-        while (threadWork) {
+        while (threadinWork) {
             try {
                 Thread.sleep(40);
             } catch (InterruptedException e) {
